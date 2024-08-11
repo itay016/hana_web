@@ -58,7 +58,7 @@ class ContactMessageCreateView(generics.CreateAPIView):
             subject,
             message,
             'hana@gmail.com',  # כתובת האימייל שממנה ישלח המייל
-            ['Itay0016@gmail.com'],  # כתובת האימייל שאליה ישלח המייל
+            ['ybhana@gmail.com'],  # כתובת האימייל שאליה ישלח המייל
             fail_silently=False,
         )
         return instance
