@@ -1,0 +1,16 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/page_work_shop/header_section/css/style.css' %}">
+{% endblock %}
+
+<section id="workshop-hero" class="workshop-hero" >
+    <div class="workshop_container" style="background-image: url('{{header_in_.image.url}}');">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{header_in_.title}}</h1>
+            <p>{{ header_in_.description }}</p>
+        </div>
+    </div>
+</div>
+</section>

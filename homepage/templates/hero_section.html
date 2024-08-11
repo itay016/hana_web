@@ -1,0 +1,20 @@
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/hero_section/css/hero_css.css' %}">
+{% endblock %}
+
+
+<section id="hero" class="hero-section">
+    <div class="hero-background">
+        <img src="{{hero_section.image.url}}" alt="Background Image">
+    </div>
+    <div class="hero-content">
+        <h1 class="hero_tittle"> {{hero_section.title}}</h1>
+        <p>{{hero_section.description}}</p>
+
+        <div class="hero-profile-picture">
+            <img src="{{hero_section.sec_image.url}}" alt="Profile Picture">
+        </div>
+        <p class="hero-name">{{ current_thrapist.name }}</p>
+    </div>
+</section>

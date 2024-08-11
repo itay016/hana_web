@@ -1,0 +1,25 @@
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/work_shops/css/work_style.css' %}">
+{% endblock %}
+
+<section id="couples-workshop-section" class="couples-workshop-section">
+    <div class="container">
+        <div class="workshop-content">
+            <div class="workshop-text">
+            <h2>{{ workshopes_section.title }}</h2>
+            <h3>{{ workshopes_section.sub_title }}</h3>
+            <p>{{ workshopes_section.description }}</p>
+            <div class="workshop-button">
+                <a href="{{ workshopes_section.button_link }}" class="button">{{ workshopes_section.button_text }}</a>
+            </div>
+        </div>
+        <div class="workshop-image">
+            <img src="{{ workshopes_section.image.url }}" alt="{{ workshopes_section.title }}">
+        </div>
+
+    </div>
+</section>
+

@@ -1,9 +1,27 @@
+{% load static %}
+
+{% block extra_js %}
+<script src="{% static '/base_in/js/upper-nav_actions.js' %}"></script>
+{% endblock %}
+
 <nav>
-    <a href="{% url 'home' %}"><img src="{{ nav_bar.logo.url }}"alt="לוגו" /></a>
+   
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    {% if nav_bar.title %}
+    <div class="page_tittle">
+        <h1 class="tittal_page">
+        {{nav_bar.title}}
+        </h1>
+    </div>
+    {% endif %}
     <ul>
-        {% comment %} <li><a href="{% url 'about' %}">קצת עלי</a></li>
-        <li><a href="{% url 'expertise' %}">תחומי התמחות</a></li>
-        <li><a href="{% url 'workshop' %}">סדנה לזוגות</a></li>
-        <li><a href="{% url 'contact' %}">צרו קשר</a></li> {% endcomment %}
+        {% for o in nav_bar.related_menue.related_fileds.all %}
+            <li><a href="{{ o.link }}">{{ o.title }}</a></li>
+        {% endfor %}
     </ul>
+    <a href="{% url 'home' %}"><img src="{{ nav_bar.logo.url }}" alt="לוגו" /></a>
 </nav>

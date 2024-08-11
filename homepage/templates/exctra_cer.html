@@ -1,0 +1,15 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/extra_cer/css/extra_cer_style.css' %}">
+{% endblock %}
+
+
+<section id="additional-training-section" class="additional-training-section">
+    <div class="container">
+        <h2>{{ excra_trains.tittle }}</h2>
+        <div class="additional-training-content">
+            <p>{{ excra_trains.description }}</p>
+        </div>
+    </div>
+</section>

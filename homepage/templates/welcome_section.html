@@ -1,0 +1,16 @@
+{% load static %}
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static '/welcome_serction/css/welcome_css.css' %}">
+{% endblock %}
+
+
+<section id="welcome-section" class="welcome-section">
+    <div class="welcome_container">
+        <h2 class="welcome_tittle">{{welcome_section.title}}</h2>
+        <p>{{ welcome_section.description|safe }}</p>
+        {% comment %} <div class="welcome-image">
+            <img src="path-to-welcome-image.jpg" alt="תמונה של המקום" />
+        </div> {% endcomment %}
+    </div>
+</section>

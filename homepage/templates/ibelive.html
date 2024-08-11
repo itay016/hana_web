@@ -1,0 +1,18 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/ibelive/css/ibelivestyle.css' %}">
+{% endblock %}
+
+<section id="belief-section" class="belief-section">
+    <div class="container">
+        <div class="belief-content">
+            <div class="belief-text">
+                {{ ibelive.description | safe }}
+            </div>
+            <div class="belief-image">
+                <img src="{{ ibelive.image.url }}" alt="תמונה המציגה את האני מאמינה">
+            </div>
+        </div>
+    </div>
+</section>

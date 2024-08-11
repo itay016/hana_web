@@ -1,0 +1,54 @@
+/* Contact Details Section */
+.contact-details-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-details-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-detail-item {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+.icon svg {
+    /* fill: #007ACC;  */
+    width: 48px;
+    height: 48px;
+}
+
+.contact-detail-item h3 {
+    font-size: 1.8rem;
+    /* color: #007ACC; */
+    margin-bottom: 10px;
+}
+
+.contact-detail-item p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-detail-item a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-detail-item a:hover {
+    color: #005f99;
+}

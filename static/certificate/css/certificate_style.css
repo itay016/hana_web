@@ -1,0 +1,44 @@
+/* Certificates Section */
+.certificates-section {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+
+.certificates-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.certificates-section h2 {
+    font-size: 2.5rem;
+    /* color: #00BFFF; */
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.certificates-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: space-between;
+}
+
+.certificate-item {
+    flex: 1 1 30%;
+    max-width: 15%;
+    margin-bottom: 20px;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.certificate-item:hover img {
+    transform: scale(1.05);
+}

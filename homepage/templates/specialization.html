@@ -1,0 +1,30 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/specialization/css/specialization_style.css' %}">
+{% endblock %}
+
+
+<section id="expertise-section" class="expertise-section">
+    <div class="container">
+        <h1>תחומי התמחות</h1>
+        <h3>הינני מומחית ומטפלת בדברים הבאים ובעוד</h3>
+        <div class="expertise-items">
+
+
+            {% for specil in specilizations %}
+            <div class="expertise-item">
+                <img src="{{ specil.image.url }}" alt="{{ specil.title }}">
+                <h4>{{ specil.title }}</h4>
+                <p>
+                    {{ specil.description }}
+                </p>
+            </div>
+            {% endfor %}
+
+
+
+
+        </div>
+    </div>
+</section>

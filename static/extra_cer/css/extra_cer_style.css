@@ -1,0 +1,25 @@
+/* Additional Training Section */
+.additional-training-section {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+
+.additional-training-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.additional-training-section h2 {
+    font-size: 2.5rem;
+    /* color: #00BFFF; */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.additional-training-content p {
+    color: #292929;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}

@@ -1,0 +1,23 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/certificate/css/certificate_style.css' %}">
+{% endblock %}
+
+
+
+
+            <section id="certificates-section" class="certificates-section">
+                <div class="container">
+                    <h2>התעודות שלי</h2>
+                    <div class="certificates-gallery">
+                        {% for cer in certifications%}
+
+                        <div class="certificate-item">
+                            <img src="{{ cer.image.url }}" alt="{{ cer.title }}">
+                            <p>{{ cer.title }}</p>
+                        </div>
+                        {% endfor%}
+                    </div>
+                </div>
+            </section>

@@ -1,0 +1,75 @@
+/* Expertise Section */
+.expertise-section {
+    /* padding: 60px 20px; */
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.expertise-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expertise-section h1 {
+    font-size: 2.5rem;
+    /* color: #00BFFF; */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.expertise-section h3 {
+    font-size: 1.5rem;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.expertise-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.expertise-item {
+    flex: 1 1 30%;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* .expertise-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+} */
+
+.expertise-item:hover {
+    transform: translateY(-10px);
+}
+
+.expertise-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.expertise-item h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #292929;
+}
+
+.expertise-item p {
+    color: #555;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}

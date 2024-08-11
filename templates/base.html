@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'base_in/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/base_in/css/upper_nav_style.css' %}">
+    <link rel="stylesheet" href="{% static '/base_in/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/base_in/css/footerStyle.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    {% block extra_icon %}    <link rel="icon" href="/path/to/your/favicon.ico" type="image/x-icon">{% endblock %}
+
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -20,12 +25,9 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 חנה בוריה יאיר. כל הזכויות שמורות.</p>
-        </div>
-    </footer>
 
+
+    {% include "footer.html" %}
     {% block extra_js %}{% endblock %}
 </body>
 </html>

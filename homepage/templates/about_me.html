@@ -1,0 +1,19 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/about_me/css/about_me_style.css' %}">
+{% endblock %}
+<section id="about-me-section" class="about-me-section">
+    <div class="container">
+        <div class="about-me-content">
+            <div class="about-me-text">
+                <h2>{{ about_me.title }}</h2>
+
+                {{ about_me.description | safe }}
+            </div>
+            <div class="about-me-image">
+                <img src="{{ about_me.image.url }}" alt="חנה בוריה יאיר">
+            </div>
+        </div>
+    </div>
+</section>

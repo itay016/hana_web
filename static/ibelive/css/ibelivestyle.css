@@ -1,0 +1,46 @@
+/* Belief Section */
+.belief-section {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: right;
+}
+
+.belief-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.belief-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.belief-text {
+    flex: 1;
+    color: #292929;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-right: 20px;
+}
+
+.belief-text b {
+    font-weight: 700;
+    color: #333;
+}
+
+.belief-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+}
+
+.belief-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}

@@ -1,0 +1,55 @@
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/page_work_shop/page_sections/css/style.css' %}">
+{% endblock %}
+
+{% for section in page_sections %}
+<section id="page-section-{{ section.apear_num }}" class="page-section">
+    <div class="container">
+        <div class="row">
+            {% if section.apear_num|divisibleby:2 %}
+                <!-- Even appear_num: Text on the right, image on the left -->
+                <div class="col-md-6">
+                    {% if section.image %}
+                    <div class="section-image">
+                        <img src="{{ section.image.url }}" alt="{{ section.title }}">
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <div class="section-content">
+                        <h2>{{ section.title }}</h2>
+                        {% if section.sub_tittle %}
+                        <h3>{{ section.sub_tittle }}</h3>
+                        {% endif %}
+                        <div class="section-details">
+                            {{ section.details|safe }}
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <!-- Odd appear_num: Text on the left, image on the right -->
+                <div class="col-md-6">
+                    <div class="section-content">
+                        <h2>{{ section.title }}</h2>
+                        {% if section.sub_tittle %}
+                        <h3>{{ section.sub_tittle }}</h3>
+                        {% endif %}
+                        <div class="section-details">
+                            {{ section.details|safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    {% if section.image %}
+                    <div class="section-image">
+                        <img src="{{ section.image.url }}" alt="{{ section.title }}">
+                    </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endfor %}

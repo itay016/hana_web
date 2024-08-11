@@ -1,0 +1,61 @@
+/* Workshop Hero Section */
+.workshop-hero  {
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    padding: 40px 0; /* Padding for spacing */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workshop-hero .workshop_container {
+    background-image: url("{{header_in_.image.url}}"); /* Use the image as a background */
+    width: 100%;
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    padding: 40px 0; /* Padding for spacing */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.workshop-hero .container {
+    max-width: 80%; /* Container width set to 80% */
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for text */
+    border-radius: 10px; /* Slight rounding of corners */
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem; /* Slightly smaller font size */
+    color: #007ACC;
+    margin-bottom: 15px; /* Reduced spacing between the title and the paragraph */
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.3rem; /* Slightly smaller font size */
+    color: #555;
+    line-height: 1.4; /* Reduced line height to bring text closer together */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workshop-hero {
+        background-size: contain; /* Adjust background size for smaller screens */
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}

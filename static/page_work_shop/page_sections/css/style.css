@@ -1,0 +1,93 @@
+/* General Page Section Styling */
+.page-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.page-section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.page-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.col-md-6 {
+    width: 48%;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.section-content {
+    padding: 20px;
+    flex: 1;
+    min-width: 50%; /* Ensures content and image take up 50% each */
+}
+
+.section-content h2 {
+    font-size: 2rem;
+    color: #007ACC;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.section-content h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.section-details {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.section-image {
+    flex: 1;
+    min-width: 50%; /* Ensures content and image take up 50% each */
+    padding: 20px;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Restrict the maximum height of the image */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+p {
+    text-align: right;
+}
+h2 {
+    text-align: right;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-section h2 {
+        font-size: 1.8rem;
+    }
+    .page-section h3 {
+        font-size: 1.3rem;
+    }
+    .section-details {
+        font-size: 1rem;
+    }
+    .row {
+        flex-direction: column; /* Stack content and image vertically on small screens */
+    }
+    .section-image img {
+        max-height: 300px; /* Adjust the max height on smaller screens */
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+}
