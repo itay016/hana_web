@@ -9,9 +9,9 @@ from decouple import config
 SECRET_KEY = 'django-insecure-hx4)euhro+ja4r#zjvvb51ys_8)#o4b5&$$w$37d_ky2at74t5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG').upper()=="TRUE"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
